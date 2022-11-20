@@ -1,14 +1,16 @@
 # flutter_food_shop_app_get_well_job
 
 A new Flutter project. This is not my project, I learned from the author who has named the dbestech. This project is used for study purposes and without use for commercial. 
-The problem relates to copyright. please contact me via Gmail:: hancongnhu1999@gmail.com
+If the problem relates to copyright, please contact me via Gmail:: hancongnhu1999@gmail.com
 
 ## Getting Started
 ## Branch naming rules
 1. with implement UI/UX: featurexx/implement_ui_ux_xxxxxx
 2. with implement Logic: featurexx/implement_logic_xxxxxx
-3. with fixbug : featurexx/fixbug_xxxxxxxxxxx
-## Referency
+3. with fix-bug : featurexx/fixbug_xxxxxxxxxxx
+## Commit naming rules
+stepxx: xxxxxxxxxxx
+## Reference
 Major features
 1. Show products based on category
 2. Shopping cart
