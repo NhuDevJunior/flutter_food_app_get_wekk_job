@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_food_shop_app_get_well_job/home/food_page_body.dart';
 import 'package:flutter_food_shop_app_get_well_job/utils/AppColors.dart';
 import 'package:flutter_food_shop_app_get_well_job/widgets/big_text.dart';
 import 'package:flutter_food_shop_app_get_well_job/widgets/small_text.dart';
@@ -27,7 +28,12 @@ class _MainFoodPageState extends State<MainFoodPage>{
                   Column(
                     children: [
                       BigText(color: AppColors.mainColor, text: "Country", size: 20,),
-                      SmallText(color: AppColors.paraColor,text: "Ha Noi",)
+                      Row(
+                        children: [
+                          SmallText(color: AppColors.paraColor,text: "Ha Noi",),
+                          Icon(Icons.arrow_drop_down_rounded)
+                        ],
+                      )
                     ],
                   ),
                   Container(
@@ -42,7 +48,8 @@ class _MainFoodPageState extends State<MainFoodPage>{
                 ],
               ),
             ),
-          )
+          ),
+          FoodPageBody(),
         ],
       ),
     );
