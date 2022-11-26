@@ -9,7 +9,7 @@ If the problem relates to copyright, please contact me via Gmail:: hancongnhu199
 2. with implement Logic: featurexx/implement_logic_xxxxxx
 3. with fix-bug : featurexx/fixbug_xxxxxxxxxxx
 ## Commit naming rules
-stepxx: xxxxxxxxxxx
+1. stepxx: xxxxxxxxxxx
 ## Reference
 Major features
 1. Show products based on category
@@ -27,6 +27,9 @@ Major features
 
 Flutter E-commerce app tutorial part 1
 https://youtu.be/7dAt-JMSCVQ
+
+Flutter E-commerce app tutorial part 2
+https://youtu.be/GQJovou6zuE
 
 Flutter E-commerce app tutorial part 3
 https://youtu.be/qapb-_gMZRs
