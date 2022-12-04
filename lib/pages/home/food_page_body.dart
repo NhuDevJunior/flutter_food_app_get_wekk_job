@@ -1,12 +1,15 @@
 
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_food_shop_app_get_well_job/widgets/app_column.dart';
 import 'package:flutter_food_shop_app_get_well_job/widgets/big_text.dart';
 import 'package:flutter_food_shop_app_get_well_job/widgets/icon_and_text_widget.dart';
 import 'package:flutter_food_shop_app_get_well_job/widgets/small_text.dart';
 
-import '../utils/AppColors.dart';
-import '../utils/dimensions.dart';
+import '../../utils/AppColors.dart';
+import '../../utils/dimensions.dart';
+
+
 
 class FoodPageBody extends StatefulWidget {
 
@@ -191,35 +194,7 @@ class _FoodPageBodyState extends State<FoodPageBody>{
               height: Dimensions.pageTextContainer,
               child: Container(
                 padding: EdgeInsets.only(top: Dimensions.height12, left: Dimensions.height17, right: Dimensions.height17),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    BigText(color: AppColors.colorDarkPrimary, text: "Chinese Side"),
-                    SizedBox(height: Dimensions.height12,),
-                    Row(
-                      children: [
-                        Wrap(
-                          children: List.generate(5, (index) => Icon(Icons.star, color: AppColors.mainColor, size: 15,)),
-                        ),
-                        SizedBox(width: Dimensions.height12,),
-                        SmallText(color: AppColors.paraColor, text: "4.5"),
-                        SizedBox(width: Dimensions.height12,),
-                        SmallText(color: AppColors.paraColor, text: "1287"),
-                        SizedBox(width: Dimensions.height12,),
-                        SmallText(color: AppColors.paraColor, text: "comments")
-                      ],
-                    ),
-                    SizedBox(height: Dimensions.height12),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        IconAndTextWidget(Icons.circle_sharp, "Normal", AppColors.paraColor, AppColors.iconColor1),
-                        IconAndTextWidget(Icons.location_on, "1.7km", AppColors.paraColor, AppColors.mainColor),
-                        IconAndTextWidget(Icons.access_time_rounded, "32min", AppColors.paraColor, AppColors.iconColor2)
-                      ],
-                    )
-                  ],
-                ),
+                child: AppColumn("Chinese Side")
               ),
               margin: EdgeInsets.only(left: Dimensions.height22, right: Dimensions.height22, bottom: Dimensions.height18),
               decoration: BoxDecoration(
